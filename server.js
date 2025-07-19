@@ -44,3 +44,7 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Servidor backend en puerto ${PORT}`);
 });
+app.get('/', (req, res) => {
+  res.send('🚀 Backend SGR desplegado exitosamente en Render.');
+});
+
