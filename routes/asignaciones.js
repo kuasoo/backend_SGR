@@ -4,7 +4,7 @@ const router = express.Router();
 const db = require('../db');
 const { verificarToken } = require('../middleware/auth');
 
-// Obtener secciones asignadas a un usuario (ya lo tienes)
+// Obtener secciones asignadas a un usuario
 router.get('/', verificarToken, async (req, res) => {
   try {
     const userId = req.user.id;
